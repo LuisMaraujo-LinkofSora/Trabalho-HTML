@@ -1,0 +1,221 @@
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://i.redd.it/dante-and-vergil-from-devil-may-cry-are-probably-some-of-v0-cul4qecnzwud1.jpg?width=3620&format=pjpg&auto=webp&s=91f65bc706f7adc1b38cf6bf18be9706e4952596');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px black;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.redd.it/in-dmc3-dante-and-vergil-look-like-actual-twins-basically-v0-den43knxi9vc1.jpg?width=4096&format=pjpg&auto=webp&s=127937828d85e58453c333be5e9a0081da78babb');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    opacity: 0.45;
+    z-index: -1;
+}
+
+* {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar-custom {
+    background: rgba(10, 0, 0, 0.9);
+    padding: 15px 0;
+    border-bottom: 2px solid #ff2e2e;
+}
+
+.navbar-title {
+    color: #ff4a4a;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+#Personagens .card-custom,
+#Musicas .card-custom {
+    background: rgba(35, 0, 0, 0.85);
+    border: 2px solid #ff2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffecec;
+    transition: .3s;
+    text-align: center;
+}
+
+#Personagens .card-custom:hover,
+#Musicas .card-custom:hover {
+    background: rgba(50, 0, 0, 0.95);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #ff2e2e;
+}
+
+#Personagens .hero-img {
+    border-radius: 50%;
+    border: 2px solid #ff2e2e;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #ff2e2e;
+}
+
+#Personagens h5,
+#Torneio h2,
+#Musicas h2,
+#Musicas h5 {
+    color: #ff4a4a;
+    text-shadow: 0 0 10px #ff2e2e;
+}
+
+#Torneio p,
+#Personagens p,
+#Musicas p {
+    color: #ffffff;
+}
+
+#Torneio {
+    background: rgba(20, 0, 0, 0.85);
+    border: 2px solid #ff2e2e;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 15px #000;
+    margin-top: 50px;
+}
+
+#Musicas {
+    background: rgba(20, 0, 0, 0.85);
+    border: 2px solid #ff2e2e;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 15px #000;
+    margin-top: 50px;
+}
+
+
+.hero-section {
+    padding: 60px 20px;
+    background: rgba(15, 0, 0, 0.8);
+    border-bottom: 2px solid #ff2e2e;
+    text-align: center;
+}
+
+.hero-img {
+    width: 150px;
+    border-radius: 10px;
+}
+.hero-desc {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #ff4a4a;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #7a0000;
+    color: #ffd6d6;
+    border: 2px solid #ff2e2e;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.hero-button:hover {
+    background: #b10000;
+    transform: scale(1.06);
+}
+
+/* ======= SEÇÕES ======= */
+.section {
+    margin-top: 50px;
+    padding: 25px;
+    background: rgba(20, 0, 0, 0.85);
+    border: 2px solid #ff2e2e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+}
+
+.section h2 {
+    color: #ff4a4a;
+    margin-bottom: 20px;
+}
+
+/* LETRAS DA DESCRIÇÃO EM BRANCO */
+.section p {
+    color: #ffffff;
+}
+
+/* ======= CARDS ======= */
+.card-custom {
+    background: rgba(30, 0, 0, 0.85);
+    border: 2px solid #ff2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffecec;
+    height: 100%;
+    transition: .3s;
+}
+
+.card-custom:hover {
+    background: rgba(45, 0, 0, 0.95);
+    transform: scale(1.03);
+}
+
+.input-field {
+    background: rgba(25, 0, 0, 0.8);
+    border: 2px solid #ff2e2e;
+    color: #ffecec;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-field::placeholder {
+    color: #ff6e6e;
+}
+
+.send-button {
+    background: #7a0000;
+    color: #ffd6d6;
+    border: 2px solid #ff2e2e;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.send-button:hover {
+    background: #b10000;
+    transform: scale(1.05);
+}
+
+.footer-custom {
+    background: rgba(10, 0, 0, 0.9);
+    padding: 20px;
+    color: #ff4a4a;
+    border-top: 2px solid #ff2e2e;
+}
